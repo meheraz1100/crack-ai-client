@@ -6,6 +6,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import PrivateRoute from "./PrivateRoute";
 import Kitchen from "../pages/Kitchen";
+import Generate from "../pages/Generate";
 
 const mainRoutes = createBrowserRouter([
   {
@@ -22,10 +23,10 @@ const mainRoutes = createBrowserRouter([
         element: <Login></Login>,
       },
       {
-        path: "kitchen",
+        path: "generate-paint",
         element: (
           <PrivateRoute>
-            <Kitchen></Kitchen>
+            <Generate></Generate>
           </PrivateRoute>
         ),
       },

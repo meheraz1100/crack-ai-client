@@ -16,9 +16,14 @@ const Header = () => {
     },
 
     {
-      name: "kitchen",
-      path: "/kitchen",
+      name: "Paintings",
+      path: "/paintings",
       type: "public",
+    },
+    {
+      name: "Generate-Paint",
+      path: "/generate-paint",
+      type: "private",
     },
   ];
   return (
@@ -33,7 +38,7 @@ const Header = () => {
       <div className="w-11/12 mx-auto py-5 flex justify-between items-center relative">
         <Link to="/" className="logo">
           <span className="text-xl font-bold text-stone-700">
-            Auth 🍳 Template
+            Leanardo 🍳 Vinci
           </span>
         </Link>
 
@@ -46,6 +51,9 @@ const Header = () => {
           ))}
           {user && user?.email ? (
             <>
+              <NavLink key="/replies" to="/replies">
+                My Replies
+              </NavLink>
               <button className="cursor-pointer" onClick={logOut}>
                 Logout
               </button>
@@ -96,6 +104,9 @@ const Header = () => {
               ))}
               {user && user?.email ? (
                 <>
+                  <NavLink key="/replies" to="/replies">
+                    My Replies
+                  </NavLink>
                   <button className="cursor-pointer" onClick={logOut}>
                     Logout
                   </button>
