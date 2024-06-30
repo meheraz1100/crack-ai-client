@@ -16,7 +16,7 @@ const Generate = () => {
     fetch("https://clipdrop-api.co/text-to-image/v1", {
       method: "POST",
       headers: {
-        "x-api-key": import.meta.env.VITE_API_KEY,
+        "x-api-key": import.meta.env.VITE_CLIP_DROP_API_KEY,
       },
       body: form,
     })

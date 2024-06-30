@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAR3SPeN1DwLyZ028g8R8Te00pCoIgocK4",
-  authDomain: "crack-gemini-ai.firebaseapp.com",
-  projectId: "crack-gemini-ai",
-  storageBucket: "crack-gemini-ai.appspot.com",
-  messagingSenderId: "665304563638",
-  appId: "1:665304563638:web:ad8ad054cbc842e7650b17",
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase
